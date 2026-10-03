@@ -1,0 +1,18 @@
+/* Expense Tracker - custom styles
+   Bootstrap does most of the work. We only add what Bootstrap doesn't cover. */
+
+/* Summary cards laid out with CSS Grid.
+   Mobile first: one card per row on small screens... */
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ...and three cards side by side from 768px (tablet and desktop) */
+@media (min-width: 768px) {
+  .summary-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
